@@ -12,3 +12,15 @@ class StringResponse(BaseModel):
 
 class IngredientRequest(BaseModel):
     ingredient: str
+
+class Ingredient(BaseModel):
+    name: str
+    amount: str
+
+class RecipeResponse(BaseModel):
+    recipe: list[str]
+    ingredients: list[Ingredient]
+
+
+class IngredientRequest(BaseModel):
+    ingredients: list[Ingredient]

@@ -1,0 +1,7 @@
+pandas
+matplotlib
+python-dotenv
+numpy
+requests
+fastapi
+uvicorn
